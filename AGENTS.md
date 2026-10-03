@@ -59,9 +59,6 @@ These are defaults for repositories that explicitly load this document.
 - When writing REQ documents, also read
   [requirement document style](styles/requirements.md), unless local instructions
   specify another format.
-- Load [Unliteral style](styles/projects/unliteral.md) only when the consuming
-  repository explicitly selects it for Unliteral documentation or its Telegram
-  RU → EN pilot.
 - Before changing a repository or preparing a PR, read
   [pull requests](workflow/pull-requests.md).
 - For repositories explicitly selecting the REQ / ADR / data / SPEC / UX
