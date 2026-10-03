@@ -13,6 +13,13 @@
   Stage only the files belonging to the task and review the staged diff.
 - Commit, push and create or update a PR when authorized by the user's task or
   applicable repository workflow. A request to create a PR authorizes those steps.
+- For authorized GitHub stacked-PR work, force pushes to the stack's topic branches
+  are allowed after rebase or restacking without separate confirmation. Prefer the
+  configured stack tool's update command (gh stack or ghstack). For manual pushes,
+  use --force-with-lease with an explicit expected remote commit; if the remote
+  branch has advanced unexpectedly, reconcile the changes before retrying. Do not
+  overwrite unrelated commits. This exception does not permit direct or forced
+  pushes to the repository's default branch.
 - Leave merging to the user unless they explicitly authorize it.
 - Use the language selected by the shared Language rules and applicable local
   overrides for PR titles and bodies. Follow the repository's PR template when
