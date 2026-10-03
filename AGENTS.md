@@ -56,8 +56,17 @@ These are defaults for repositories that explicitly load this document.
   [Russian style](styles/STYLE_ru.md). Load only the selected language profile.
   For another language, apply the common rules; do not substitute English or
   Russian. Style documents do not override the selected language.
+- When writing REQ documents, also read
+  [requirement document style](styles/requirements.md), unless local instructions
+  specify another format.
+- Load [Unliteral style](styles/projects/unliteral.md) only when the consuming
+  repository explicitly selects it for Unliteral documentation or its Telegram
+  RU → EN pilot.
 - Before changing a repository or preparing a PR, read
   [pull requests](workflow/pull-requests.md).
+- For repositories explicitly selecting the REQ / ADR / data / SPEC / UX
+  workflow, read [product documentation](workflow/documents.md) before editing
+  requirements, analysis or project documentation.
 - Before implementation or code review, read
   [code principles](principles/code.md).
 - For behavior changes, tests, or verification, read
